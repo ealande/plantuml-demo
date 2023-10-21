@@ -22,6 +22,14 @@ class AlertaAbsoluto {
   constructor(desc, hor)
 }
 
+class fim <<abstract>> {
+  - number timerHandler
+  + Date horario
+  + boolean absoluto
+  + string descricao
+  + cancelar()
+}
+
 Alerta <|-- AlertaRelativo
 Alerta <|-- AlertaAbsoluto
 
