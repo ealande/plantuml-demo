@@ -1,7 +1,13 @@
 @startuml "Classes"
 
 top to bottom direction
-
+class nova <<abstract>> {
+  - number timerHandler
+  + Date horario
+  + boolean absoluto
+  + string descricao
+  + cancelar()
+}
 class Alerta <<abstract>> {
   - number timerHandler
   + Date horario
